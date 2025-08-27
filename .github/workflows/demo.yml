@@ -30,7 +30,7 @@ jobs:
         with:
           name: dist-files
           path: |
-            dist
+            dist            !dist/*:Zone.Identifier
             package.json
   deploy:
     needs: build
